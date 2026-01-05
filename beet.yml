@@ -1,0 +1,24 @@
+# For test purpose only
+
+meta:
+  mecha:
+    readonly: true
+
+data_pack:
+  name: algol-dp
+  description: Algol DP test build
+  min_format: 94
+  max_format: 94
+  load:
+    - Algol Core
+
+resource_pack:
+  name: algol-rp
+  description: Algol RP test build
+  min_format: 75
+  max_format: 75
+  load: Algol Resources
+
+pipeline:
+  - beet.contrib.unknown_files
+  - mecha

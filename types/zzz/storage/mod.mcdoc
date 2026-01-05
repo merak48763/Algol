@@ -1,0 +1,21 @@
+use super::super::util::ValueHolder
+use macro::MacroParamMap
+
+dispatch minecraft:storage[algol:zzz] to struct AlgolInternalStorage {
+  /// Macro parameters
+  macro?: MacroParamMap,
+  /// Serialized data
+  ser?: SerializedData,
+  /// Player string UUID → score ID
+  player_id?: struct PlayerIdMap {
+    [#[uuid] string]: int @ 1..,
+  }
+}
+
+struct SerializedData {
+  uuid?: int[] @ 4,
+}
+
+dispatch minecraft:storage[gu:main] to struct GuOutput {
+  out?: #[uuid] string,
+}

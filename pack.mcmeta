@@ -1,6 +1,0 @@
-{
-  "pack": {
-    "min_format": 94, "max_format": 94,
-    "description": "Dummy pack.mcmeta to invoke Spyglass"
-  }
-}

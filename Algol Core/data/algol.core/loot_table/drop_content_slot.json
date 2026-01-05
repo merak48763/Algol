@@ -1,0 +1,18 @@
+{
+  "type": "command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "slots",
+          "slot_source": {
+            "type": "slot_range",
+            "source": "this",
+            "slots": "contents"
+          }
+        }
+      ]
+    }
+  ]
+}

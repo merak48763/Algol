@@ -1,0 +1,7 @@
+type ValueHolder<T> = struct {
+  value?: T,
+}
+
+struct Callback {
+  run?: #[command] string,
+}
