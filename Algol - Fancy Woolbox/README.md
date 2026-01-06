@@ -20,6 +20,6 @@ Dependency: core
 
 ## Function API
 
-### `algol.woolbox:place_here`
+### `algol.fwb:place_here`
 
 - Execute the function in chat to place a woolbox.
