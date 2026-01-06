@@ -1,5 +1,5 @@
 {
   "values": [
-    "algol.core:zzz/tick"
+    {"id": "#algol:tick", "required": false}
   ]
 }

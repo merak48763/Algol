@@ -1,5 +1,5 @@
 {
   "values": [
-    "algol.core:zzz/load"
+    {"id": "#algol:load", "required": false}
   ]
 }
