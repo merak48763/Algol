@@ -1,0 +1,25 @@
+[
+  {
+    "function": "copy_components",
+    "source": "block_entity",
+    "include": [
+      "custom_data",
+      "custom_name"
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "predicates": {
+        "custom_data": "{discard_name: 1b}"
+      }
+    },
+    "on_pass": {
+      "function": "set_components",
+      "components": {
+        "!custom_data": {},
+        "!custom_name": {}
+      }
+    }
+  }
+]

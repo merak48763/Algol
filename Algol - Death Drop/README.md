@@ -1,12 +1,15 @@
 # Algol - Death Drop
 
-Dependency: core  
-This pack takes over the control of `keep_inventory` game rule.
+Dependency: core
 
 This pack overrides the default death drop behavior.  
 Items will drop at the player's last safe location, rather than always at death location.  
 Dropped items are packed in a "grave" so that they don't despawn after 5 minutes.  
 Interact (right click) with the grave to pop items out.
+
+## Compatibility Notes
+
+- This pack takes over the control of `keep_inventory` game rule.
 
 ## Custom Data
 
