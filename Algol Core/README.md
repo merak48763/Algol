@@ -12,7 +12,11 @@ Dependency: none
 
 ## Custom Data
 
-TODO: interaction
+### `on_attack` & `on_interact`
+
+- Has effect on interaction entity.
+- Fields:
+  - `run`: the command to run on attacked/interacted.
 
 ## Event Function Tags
 

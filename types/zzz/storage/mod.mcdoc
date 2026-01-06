@@ -16,6 +16,9 @@ struct SerializedData {
   uuid?: int[] @ 4,
 }
 
-dispatch minecraft:storage[gu:main] to struct GuOutput {
+dispatch minecraft:storage[gu:main] to struct GuStorage {
+  /// GU internal data
+  in?: int[] @ 4,
+  /// GU output
   out?: #[uuid] string,
 }

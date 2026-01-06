@@ -1,15 +1,10 @@
 struct MacroParamMap {
-  [#[id="function"] string]: algol:macro_param[[%key]],
-}
-
-dispatch algol:macro_param[%unknown] to struct {
-  [string]: any,
-}
-
-dispatch algol:macro_param[gu:convert] to struct {
-  UUID?: int[] @ 4,
-}
-
-dispatch algol:macro_param[algol.core:zzz/prepare_player/load_id] to struct {
-  uuid_str?: #[uuid] string,
+  /// - `gu:convert`
+  gu?: struct {
+    UUID?: int[] @ 4,
+  },
+  /// - `algol.core:zzz/prepare_player/load_id`
+  player_id?: struct {
+    uuid_str?: #[uuid] string,
+  },
 }

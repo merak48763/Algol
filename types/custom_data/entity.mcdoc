@@ -1,0 +1,3 @@
+use super::super::util::Callback
+
+dispatch mcdoc:custom_data[on_attack, on_interact] to Callback
