@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "hurt": {
+      "trigger": "entity_hurt_player"
+    }
+  },
+  "rewards": {
+    "function": "algol.core:zzz/detect_death/advancement_hurt"
+  }
+}

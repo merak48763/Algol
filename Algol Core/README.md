@@ -38,6 +38,16 @@ Data will be loaded to storage `algol:player_storage`, under the root tag `value
 
 ### `#algol.core:event/join`
 
-- Called when player joins
-- Context: `as` and `at` the player
-- Entity tag: `@s[tag=al.new]` if it's player's first time joining
+- Called when player joins.
+- Context: `as` and `at` the player.
+- Entity tag: `@s[tag=al.new]` if it's player's first time joining.
+
+### `#algol.core:event/die`
+
+- Called when player dies.
+- Context: `as` and `at` the player.
+
+### `#algol.core:event/respawn`
+
+- Called when player respawns.
+- Context: `as` and `at` the player.
