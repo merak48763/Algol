@@ -10,14 +10,15 @@ data_pack:
   min_format: 94
   max_format: 94
   load:
-    - Algol Core
+    - Algol - Core
+    - Algol - Death Drop
 
 resource_pack:
   name: algol-rp
   description: Algol RP test build
   min_format: 75
   max_format: 75
-  load: Algol Resources
+  load: Algol - Resources
 
 pipeline:
   - beet.contrib.unknown_files

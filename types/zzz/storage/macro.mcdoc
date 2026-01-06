@@ -12,4 +12,10 @@ struct MacroParamMap {
   player_storage?: struct {
     player_id?: int @ 1..,
   },
+  /// - `algol.drop:zzz/on_death/init_grave`
+  position?: struct {
+    x?: double,
+    y?: double,
+    z?: double,
+  },
 }

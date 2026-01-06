@@ -1,0 +1,26 @@
+{
+  "type": "command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "slots",
+          "slot_source": {
+            "type": "contents",
+            "slot_source": {
+              "type": "contents",
+              "slot_source": {
+                "type": "slot_range",
+                "source": "this",
+                "slots": "contents"
+              },
+              "component": "bundle_contents"
+            },
+            "component": "container"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "contents": {
+        "predicates": {
+          "bundle_contents": {
+            "items": {
+              "contains": [
+                {
+                  "predicates": {
+                    "container": {
+                      "items": {
+                        "size": {"min": 1}
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "type": "command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "bundle",
+          "functions": [
+            {
+              "function": "set_contents",
+              "component": "bundle_contents",
+              "entries": [
+                {
+                  "type": "item",
+                  "name": "chest",
+                  "functions": [
+                    {
+                      "function": "set_contents",
+                      "component": "container",
+                      "entries": [
+                        {
+                          "type": "slots",
+                          "slot_source": {
+                            "type": "slot_range",
+                            "source": "this",
+                            "slots": "inventory.*"
+                          },
+                          "functions": [
+                            {
+                              "function": "reference",
+                              "name": "algol.drop:zzz/filter"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "chest",
+                  "functions": [
+                    {
+                      "function": "set_contents",
+                      "component": "container",
+                      "entries": [
+                        {
+                          "type": "slots",
+                          "slot_source": [
+                            {
+                              "type": "slot_range",
+                              "source": "this",
+                              "slots": "hotbar.*"
+                            },
+                            {
+                              "type": "slot_range",
+                              "source": "this",
+                              "slots": "armor.*"
+                            },
+                            {
+                              "type": "slot_range",
+                              "source": "this",
+                              "slots": "player.crafting.*"
+                            },
+                            {
+                              "type": "slot_range",
+                              "source": "this",
+                              "slots": "weapon.offhand"
+                            },
+                            {
+                              "type": "slot_range",
+                              "source": "this",
+                              "slots": "player.cursor"
+                            }
+                          ],
+                          "functions": [
+                            {
+                              "function": "reference",
+                              "name": "algol.drop:zzz/filter"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
