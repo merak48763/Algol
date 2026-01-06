@@ -1,0 +1,9 @@
+use super::super::util::ValueHolder
+
+dispatch minecraft:storage[algol:player_storage] to ValueHolder<struct PlayerStorage {
+  [#[dispatcher_key="algol:player_storage"] string]: algol:player_storage[[%key]],
+}>
+dispatch algol:player_storage[%unknown] to any
+
+dispatch algol:player_storage[uuid] to int[] @ 4
+dispatch algol:player_storage[uuid_str] to #[uuid] string

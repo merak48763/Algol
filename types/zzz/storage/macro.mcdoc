@@ -7,4 +7,9 @@ struct MacroParamMap {
   player_id?: struct {
     uuid_str?: #[uuid] string,
   },
+  /// - `algol.core:zzz/player_storage/read`
+  /// - `algol.core:zzz/player_storage/write`
+  player_storage?: struct {
+    player_id?: int @ 1..,
+  },
 }

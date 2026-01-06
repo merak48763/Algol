@@ -18,6 +18,22 @@ Dependency: none
 - Fields:
   - `run`: the command to run on attacked/interacted.
 
+## Player Score ID
+
+Players have their unique ID stored in objective `al.player_id`.  
+This ID is guaranteed to remain unchanged, even if the player changed name.
+
+## Player Storage
+
+Holds arbitrary data of each player.  
+Call function `algol.core:load_player_storage` as the player before access.  
+Data will be loaded to storage `algol:player_storage`, under the root tag `value`.
+
+### Built-in data
+
+- `uuid`: The int-array UUID of the player.
+- `uuid_str`: The string UUID of the player.
+
 ## Event Function Tags
 
 ### `#algol.core:event/join`
