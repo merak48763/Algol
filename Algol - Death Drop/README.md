@@ -2,9 +2,10 @@
 
 Dependency: core
 
-This pack overrides the default death drop behavior.  
-Items will drop at the player's last safe location, rather than always at death location.  
-Dropped items are packed in a "grave" so that they don't despawn after 5 minutes.  
+This pack overrides the default death drop behavior.
+
+Items will drop at the player's last safe location, rather than always at death location.
+Dropped items are packed in a "grave" so that they don't despawn.  
 Interact (right click) with the grave to pop items out.
 
 ## Compatibility Notes
@@ -16,7 +17,7 @@ Interact (right click) with the grave to pop items out.
 ### `soulbound`
 
 - Has effect on items.
-- When the value is `1b`, the item doesn't drop on death.
+- If the value is `1b`, the item doesn't drop on death.
 
 ## Enchantment Tags
 

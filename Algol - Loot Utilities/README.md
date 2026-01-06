@@ -15,8 +15,7 @@ Dependency: none
   - Trapped chest
   - All variants of copper chest
   - Barrel
-- When the value is `1b`, custom name of the block entity won't be copied on broken.
+- If the value is `1b`, custom name of the block entity won't be copied when broken.
   - The whole `custom_data` component is then cleared.
-- This custom data is intended to make players unable to get loot boxes with fancy names.
-  - The custom data as item component should only exist in map development stage.
-  - In released maps, the custom data should only be block component.
+- This custom data is intended to make players unable to get loot boxes using custom font GUI trick.
+  - In released maps, the custom data should only exist in block component.
