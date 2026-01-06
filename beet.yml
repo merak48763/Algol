@@ -13,6 +13,7 @@ data_pack:
   load:
     - Algol - Core
     - Algol - Death Drop
+    - Algol - Fancy Woolbox
 
 resource_pack:
   name: algol-rp

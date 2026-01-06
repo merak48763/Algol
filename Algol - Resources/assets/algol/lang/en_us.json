@@ -1,6 +1,8 @@
 {
   "algol.pack.core": "Algol - Core DP",
   "algol.pack.death_drop": "Algol - Death Drop DP",
+  "algol.pack.fancy_woolbox": "Algol - Fancy Woolbox DP",
+
   "algol.death_drop.owner": "Death drop of %s",
   "algol.death_drop.pickup": "Interact to drop the items"
 }
