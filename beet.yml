@@ -3,6 +3,7 @@
 meta:
   mecha:
     readonly: true
+    commands: https://raw.githubusercontent.com/misode/mcmeta/refs/tags/1.21.11-summary/commands/data.min.json
 
 data_pack:
   name: algol-dp
