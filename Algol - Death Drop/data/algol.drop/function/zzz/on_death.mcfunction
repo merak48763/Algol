@@ -1,12 +1,19 @@
 # copy inventory to two chests inside a bundle
 loot replace entity 3067b7fd-0-0-0-1 contents loot algol.drop:zzz/bundle_inventory
-
-# dropped nothing -> don't spawn grave
+# dropped nothing -> skip all
 execute as 3067b7fd-0-0-0-1 unless predicate algol.drop:zzz/hold_something run return 1
 
 # prevent drop check
 # allow side effects in the function tag
 execute if function #algol.drop:check/keep_inventory run return 1
+
+# clear inventory
+clear @s *[!custom_data~{soulbound: 1b}, !custom_data~{smithed: {ignore: {everything: 1b}}}]
+
+# apply vanishing curse
+item modify entity 3067b7fd-0-0-0-1 contents algol.drop:zzz/apply_vanishing
+# nothing left -> don't spawn grave
+execute as 3067b7fd-0-0-0-1 unless predicate algol.drop:zzz/hold_something run return 1
 
 # place grave
   # load position
@@ -35,6 +42,3 @@ execute if function #algol.drop:check/keep_inventory run return 1
   tag @s remove this
   execute positioned -30000000 0 1832231 as @e[tag=al.new, type=interaction, distance=..0.01, limit=1] \
     run function algol.drop:zzz/on_death/init_grave with storage algol:zzz macro.position
-
-# clear inventory
-clear @s *[!custom_data~{soulbound: 1b}, !custom_data~{smithed: {ignore: {everything: 1b}}}]

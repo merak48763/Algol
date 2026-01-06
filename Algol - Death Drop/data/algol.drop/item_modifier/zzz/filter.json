@@ -2,9 +2,7 @@
   "function": "filtered",
   "item_filter": {
     "predicates": {
-      "enchantments": [
-        {"enchantments": "#algol.drop:vanishing"}
-      ]
+      "custom_data": "{soulbound: 1b}"
     }
   },
   "on_pass": {
@@ -14,22 +12,11 @@
     "function": "filtered",
     "item_filter": {
       "predicates": {
-        "custom_data": "{soulbound: 1b}"
+        "custom_data": "{smithed: {ignore: {everything: 1b}}}"
       }
     },
     "on_pass": {
       "function": "discard"
-    },
-    "on_fail": {
-      "function": "filtered",
-      "item_filter": {
-        "predicates": {
-          "custom_data": "{smithed: {ignore: {everything: 1b}}}"
-        }
-      },
-      "on_pass": {
-        "function": "discard"
-      }
     }
   }
 }

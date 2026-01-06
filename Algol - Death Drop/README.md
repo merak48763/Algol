@@ -32,5 +32,5 @@ Interact (right click) with the grave to pop items out.
   - Return nothing to let other functions in the tag continue the check.
   - Return a falsy value to drop inventory **immediately**.
     - Note: This is an unusual case. Use it after careful consideration!
-- Side effects are allowed in this function.
-  - For example, remove a special item from the player's inventory.
+- If the function returns a truthy value, side effects are allowed in this function.
+  - Otherwise, apply side effects carefully.
