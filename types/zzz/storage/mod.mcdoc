@@ -1,4 +1,5 @@
 use super::super::util::ValueHolder
+use super::super::util::Callback
 use macro::MacroParamMap
 use super::super::core::storage::PlayerStorage
 
@@ -7,6 +8,8 @@ dispatch minecraft:storage[algol:zzz] to struct AlgolInternalStorage {
   macro?: MacroParamMap,
   /// Serialized data
   ser?: SerializedData,
+  /// Temp storage for data compare trick
+  cmp?: any,
   /// Player string UUID → score ID
   player_id?: struct PlayerIdMap {
     [#[uuid] string]: int @ 1..,
@@ -15,10 +18,17 @@ dispatch minecraft:storage[algol:zzz] to struct AlgolInternalStorage {
   player_storage?: struct PlayerStorageBase {
     [#[integer(min=1)] string]: PlayerStorage,
   },
+  /// Cache tick commands to avoid serializing entity NBT
+  spawner_command?: struct {
+    [#[integer(min=1)] string]: Callback,
+  },
 }
 
 struct SerializedData {
+  /// UUID int array
   uuid?: int[] @ 4,
+  /// `custom_data` component
+  custom_data?: minecraft:data_component[custom_data],
 }
 
 dispatch minecraft:storage[gu:main] to struct GuStorage {

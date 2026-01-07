@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "min_format": 94, "max_format": 94,
+    "description": {"translate": "algol.pack.spawner_marker", "fallback": "Algol - Spawner Marker DP"}
+  }
+}
