@@ -18,10 +18,6 @@ dispatch minecraft:storage[algol:zzz] to struct AlgolInternalStorage {
   player_storage?: struct PlayerStorageBase {
     [#[integer(min=1)] string]: PlayerStorage,
   },
-  /// Cache tick commands to avoid serializing entity NBT
-  spawner_command?: struct {
-    [#[integer(min=1)] string]: Callback,
-  },
 }
 
 struct SerializedData {

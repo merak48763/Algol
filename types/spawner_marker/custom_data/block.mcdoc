@@ -4,8 +4,6 @@ dispatch mcdoc:custom_data[spawner] to struct SpawnerCustomData {
   /// Labelling tags on the marker entity.
   /// In addition to the specified tags, all spawner markers have `al.spawner` tag.
   tags?: [#[tag] string],
-  /// Command to run as & at the marker every tick.
-  tick?: Callback,
   /// Command to run as & at the marker when the spawner is broken.
   on_broken?: Callback,
   /// Whether the marker should be kept after the spawner is broken.

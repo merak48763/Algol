@@ -1,0 +1,9 @@
+{
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "predicates": {
+      "custom_data": "{spawner: {no_gc: 1b}}"
+    }
+  }
+}
