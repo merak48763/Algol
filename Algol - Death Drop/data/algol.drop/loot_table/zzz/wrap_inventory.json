@@ -9,6 +9,19 @@
           "name": "bundle",
           "functions": [
             {
+              "function": "set_components",
+              "components": {
+                "equippable": {
+                  "slot": "saddle",
+                  "equip_sound": "intentionally_empty"
+                },
+                "enchantments": {
+                  "binding_curse": 1,
+                  "vanishing_curse": 1
+                }
+              }
+            },
+            {
               "function": "set_contents",
               "component": "bundle_contents",
               "entries": [
@@ -62,12 +75,12 @@
                             {
                               "type": "slot_range",
                               "source": "this",
-                              "slots": "player.crafting.*"
+                              "slots": "weapon.offhand"
                             },
                             {
                               "type": "slot_range",
                               "source": "this",
-                              "slots": "weapon.offhand"
+                              "slots": "player.crafting.*"
                             },
                             {
                               "type": "slot_range",

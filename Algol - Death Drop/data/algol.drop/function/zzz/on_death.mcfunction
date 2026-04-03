@@ -1,5 +1,5 @@
 # copy inventory to two chests inside a bundle
-loot replace entity 3067b7fd-0-0-0-1 contents loot algol.drop:zzz/bundle_inventory
+loot replace entity 3067b7fd-0-0-0-1 contents loot algol.drop:zzz/wrap_inventory
 # dropped nothing -> skip all
 execute as 3067b7fd-0-0-0-1 unless predicate algol.drop:zzz/hold_something run return 1
 
@@ -30,13 +30,14 @@ execute as 3067b7fd-0-0-0-1 unless predicate algol.drop:zzz/hold_something run r
   summon interaction -30000000 0 1832231 { \
     Tags: ["al.new"], \
     data: { \
-      on_interact: {run: "function algol.drop:zzz/pop_items"} \
+      on_interact: {run: "function algol.drop:zzz/on_grave_interact"}, \
+      on_attack: {run: "function algol.drop:zzz/on_grave_attack"} \
     }, \
     height: .8, width: .8, response: true, Invulnerable: true, \
     Passengers: [ \
       {id: "item_display", billboard: "vertical", transformation: {translation: [0f, -.4f, 0f], scale: [.8f, .8f, .8f], left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f]}}, \
-      {id: "text_display", Tags: ["al.refresh"], billboard: "vertical", text: {translate: "algol.death_drop.owner", fallback: "Death drop of %s", with: [{selector: "@a[tag=this, limit=1]"}]}, transformation: {translation: [0f, .25f, 0f], scale: [.8f, .8f, .8f], left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f]}}, \
-      {id: "text_display", Tags: ["al.refresh"], billboard: "vertical", text: {translate: "algol.death_drop.pickup", fallback: "Interact to drop the items"}, transformation: {translation: [0f, 0f, 0f], scale: [.8f, .8f, .8f], left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f]}} \
+      {id: "text_display", Tags: ["al.refresh"], billboard: "vertical", text: {translate: "algol.death_drop.owner", fallback: "Items of %s", with: [{selector: "@a[tag=this, limit=1]"}]}, transformation: {translation: [0f, .15f, 0f], scale: [.5f, .5f, .5f], left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f]}}, \
+      {id: "text_display", Tags: ["al.refresh"], billboard: "vertical", text: {translate: "algol.death_drop.pickup", fallback: "Interact to take the items"}, transformation: {translation: [0f, 0f, 0f], scale: [.5f, .5f, .5f], left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f]}} \
     ] \
   }
   tag @s remove this

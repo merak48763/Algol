@@ -1,0 +1,22 @@
+{
+  "type": "advancement_reward",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "slots",
+          "slot_source": {
+            "type": "contents",
+            "component": "container",
+            "slot_source": {
+              "type": "slot_range",
+              "source": "this",
+              "slots": "saddle"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

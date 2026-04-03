@@ -1,5 +1,5 @@
 {
-  "type": "command",
+  "type": "advancement_reward",
   "pools": [
     {
       "rolls": 1,
@@ -13,7 +13,7 @@
               "slot_source": {
                 "type": "slot_range",
                 "source": "this",
-                "slots": "contents"
+                "slots": "saddle"
               },
               "component": "bundle_contents"
             },

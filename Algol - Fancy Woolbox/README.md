@@ -15,7 +15,8 @@ Dependency: core
 
 ### Get item
 
-- Interact (right click) with the interaction entity to get a **copy of** the item stack inside.
+- Attack / interact with the interaction entity to get a **copy of** the item stack inside.
+- "Break" and "set item" behaviors have higher priority.
 - The item can be duplicated infinitely.
 
 ## In-chat Functions

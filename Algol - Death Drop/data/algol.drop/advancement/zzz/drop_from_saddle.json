@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "command": {
+      "trigger": "impossible"
+    }
+  },
+  "rewards": {
+    "loot": ["algol.drop:zzz/unwrap_saddle"],
+    "function": "algol.drop:zzz/advancement_cleanup"
+  }
+}

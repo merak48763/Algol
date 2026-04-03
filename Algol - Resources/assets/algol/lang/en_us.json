@@ -3,9 +3,7 @@
   "algol.pack.death_drop": "Algol - Death Drop DP",
   "algol.pack.fancy_woolbox": "Algol - Fancy Woolbox DP",
   "algol.pack.loot_util": "Algol - Loot Utilities DP",
-  "algol.pack.spawner_marker": "Algol - Spawner Marker DP",
 
-  "algol.death_drop.owner": "Death drop of %s",
-  "algol.death_drop.pickup": "Interact to drop the items",
-  "algol.spawner_marker.scan_enabled": "Spawner scanning is enabled."
+  "algol.death_drop.owner": "Items of %s",
+  "algol.death_drop.pickup": "Interact to take the items"
 }
