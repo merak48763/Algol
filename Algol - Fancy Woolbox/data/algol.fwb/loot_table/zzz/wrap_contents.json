@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "chest",
+          "name": "barrier",
           "functions": [
             {
               "function": "set_components",
