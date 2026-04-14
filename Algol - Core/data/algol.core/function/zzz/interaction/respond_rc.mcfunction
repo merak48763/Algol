@@ -3,6 +3,6 @@ execute on target run scoreboard players set #is_this al.zzz 1
 execute if score #is_this al.zzz matches 0 run return fail
 
 # callback
-function algol.core:zzz/interaction/eval with entity @s data.on_interact
+function algol.core:zzz/interaction/eval with entity @s data."al/on_interact"
 # remove record
 data remove entity @s interaction

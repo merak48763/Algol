@@ -12,7 +12,7 @@ Dependency: none
 
 ## Custom Data
 
-### `on_attack` & `on_interact`
+### `al/on_attack` & `al/on_interact`
 
 - Has effect on interaction entity.
 - Fields:

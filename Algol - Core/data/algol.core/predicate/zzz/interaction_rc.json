@@ -3,7 +3,7 @@
   "entity": "this",
   "predicate": {
     "predicates": {
-      "custom_data": "{on_interact: {}}"
+      "custom_data": "{'al/on_interact': {}}"
     }
   }
 }

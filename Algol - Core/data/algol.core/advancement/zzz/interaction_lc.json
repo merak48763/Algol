@@ -10,7 +10,7 @@
             "predicate": {
               "type": "interaction",
               "predicates": {
-                "custom_data": "{on_attack: {}}"
+                "custom_data": "{'al/on_attack': {}}"
               }
             }
           }

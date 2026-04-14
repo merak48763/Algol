@@ -7,8 +7,8 @@ setblock ~ ~1 ~ glass
 setblock ~ ~2 ~ bedrock
 execute align xyz run summon interaction ~.5 ~1.25 ~.5 { \
   data: { \
-    on_interact: {run: "function algol.fwb:zzz/on_interact"}, \
-    on_attack: {run: "function algol.fwb:zzz/on_attack"} \
+    "al/on_interact": {run: "function algol.fwb:zzz/on_interact"}, \
+    "al/on_attack": {run: "function algol.fwb:zzz/on_attack"} \
   }, \
   height: .5, width: .5, response: true, Invulnerable: true \
 }

@@ -30,8 +30,8 @@ execute as 3067b7fd-0-0-0-1 unless predicate algol.drop:zzz/hold_something run r
   summon interaction -30000000 0 1832231 { \
     Tags: ["al.new"], \
     data: { \
-      on_interact: {run: "function algol.drop:zzz/on_grave_interact"}, \
-      on_attack: {run: "function algol.drop:zzz/on_grave_attack"} \
+      "al/on_interact": {run: "function algol.drop:zzz/on_grave_interact"}, \
+      "al/on_attack": {run: "function algol.drop:zzz/on_grave_attack"} \
     }, \
     height: .8, width: .8, response: true, Invulnerable: true, \
     Passengers: [ \
