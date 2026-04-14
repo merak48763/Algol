@@ -1,1 +1,1 @@
-dispatch mcdoc:custom_data[discard_name] to boolean
+dispatch mcdoc:custom_data["al/discard_name"] to boolean

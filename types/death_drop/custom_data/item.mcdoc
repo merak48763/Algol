@@ -1,1 +1,1 @@
-dispatch mcdoc:custom_data[soulbound] to boolean
+dispatch mcdoc:custom_data["al/soulbound"] to boolean

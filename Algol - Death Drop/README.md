@@ -14,7 +14,7 @@ Attack (left click) / interact (right click) with the grave to pop items out.
 
 ## Custom Data
 
-### `soulbound`
+### `al/soulbound`
 
 - Has effect on items.
 - If the value is `1b`, the item doesn't drop on death.

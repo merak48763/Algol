@@ -8,7 +8,7 @@ execute as 3067b7fd-0-0-0-1 unless predicate algol.drop:zzz/hold_something run r
 execute if function #algol.drop:check/keep_inventory run return 1
 
 # clear inventory
-clear @s *[!custom_data~{soulbound: 1b}, !custom_data~{smithed: {ignore: {everything: 1b}}}]
+clear @s *[!custom_data~{"al/soulbound": 1b}, !custom_data~{smithed: {ignore: {everything: 1b}}}]
 
 # apply vanishing curse
 item modify entity 3067b7fd-0-0-0-1 contents algol.drop:zzz/apply_vanishing

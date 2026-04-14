@@ -2,7 +2,7 @@
   "function": "filtered",
   "item_filter": {
     "predicates": {
-      "custom_data": "{soulbound: 1b}"
+      "custom_data": "{'al/soulbound': 1b}"
     }
   },
   "on_pass": {

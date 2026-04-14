@@ -11,7 +11,7 @@
     "function": "filtered",
     "item_filter": {
       "predicates": {
-        "custom_data": "{discard_name: 1b}"
+        "custom_data": "{'al/discard_name': 1b}"
       }
     },
     "on_pass": {

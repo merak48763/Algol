@@ -8,7 +8,7 @@ Dependency: none
 
 ## Custom Data
 
-### `discard_name`
+### `al/discard_name`
 
 - Has effect on some container blocks, including:
   - Chest
