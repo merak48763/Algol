@@ -1,1 +1,8 @@
 dispatch mcdoc:custom_data["al/discard_name"] to boolean
+
+dispatch mcdoc:custom_data["al/special_head"] to struct SpecialHeadConfig {
+  /// Defaults to `true`.
+  equippable?: boolean,
+  /// Defaults to `true`.
+  enchantable?: boolean,
+}

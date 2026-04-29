@@ -4,9 +4,13 @@ Dependency: none
 
 ## Compatibility Notes
 
-- This pack modifies vanilla block-broken loot table of containers.
+- This pack modifies vanilla block-broken loot table of containers and player head.
 
 ## Custom Data
+
+### `al/custom_head`
+
+
 
 ### `al/discard_name`
 
