@@ -10,7 +10,11 @@ Dependency: none
 
 ### `al/custom_head`
 
-
+- Has effect on player head.
+- When present, all components of the head are copied.
+- Fields:
+  - `equippable`: When set to `false`, the `equippable` component will be removed from the head. Defaults to `true`.
+  - `enchantable`: When set to `false`, the `enchantments` component will be removed from the head. Defaults to `true`.
 
 ### `al/discard_name`
 
