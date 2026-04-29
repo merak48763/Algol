@@ -1,3 +1,5 @@
+use super::super::super::util::Callback
+
 struct MacroParamMap {
   /// - `gu:convert`
   gu?: struct {
@@ -18,4 +20,15 @@ struct MacroParamMap {
     y?: double,
     z?: double,
   },
+  /// - `algol.dialog:zzz/handle_input/load_command`
+  dialog_button?: struct {
+    id?: string,
+    input?: int @ 1..,
+  },
+  /// - `algol.dialog:zzz/handle_form_input/load_and_run_command`
+  dialog_form?: struct {
+    id?: string,
+  },
+  /// - `algol.dialog:zzz/handle_input/eval`
+  eval?: Callback,
 }

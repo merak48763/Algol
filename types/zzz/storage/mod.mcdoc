@@ -2,13 +2,14 @@ use super::super::util::ValueHolder
 use super::super::util::Callback
 use macro::MacroParamMap
 use super::super::core::storage::PlayerStorage
+use super::super::dialog_manager::storage::DialogEntry
 
 dispatch minecraft:storage[algol:zzz] to struct AlgolInternalStorage {
   /// Macro parameters
   macro?: MacroParamMap,
   /// Serialized data
   ser?: SerializedData,
-  /// Temp storage for data compare trick
+  /// Temporary storage for data compare trick
   cmp?: any,
   /// Player string UUID → score ID
   player_id?: struct PlayerIdMap {
@@ -30,6 +31,8 @@ struct SerializedData {
 dispatch minecraft:storage[gu:main] to struct GuStorage {
   /// GU internal data
   in?: int[] @ 4,
+  /// GU internal data
+  hex_chars?: [string @ 2],
   /// GU output
   out?: #[uuid] string,
 }

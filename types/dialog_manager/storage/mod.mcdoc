@@ -1,0 +1,23 @@
+use super::super::util::ValueHolder
+
+dispatch minecraft:storage[algol:dialog_registry] to ValueHolder<struct DialogRegistry {
+  [string]: DialogEntry,
+}>
+
+struct DialogEntry {
+  /// Callback command to show the dialog. \
+  /// `@s` is the player opening the dialog.
+  show: #[command] string,
+  /// Command to run when triggering buttons in the dialog. \
+  /// `@s` is the player seeing the dialog. \
+  /// `-1` is hardcoded to be "close dialog".
+  buttons?: struct DialogButtonMap {
+    [#[integer(min=1)] string]: #[command] string,
+  },
+  /// The value representing "waiting for form submission". \
+  /// Defaults to `0`.
+  form_idle_value?: int,
+  /// Command to run when triggering form submission in the dialog. \
+  /// `@s` is the player seeing the dialog.
+  on_form_submit?: #[command] string,
+}

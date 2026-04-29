@@ -8,6 +8,7 @@ data modify storage algol:zzz macro.gu.UUID set from storage algol:zzz ser.uuid
 function gu:convert with storage algol:zzz macro.gu
 
 # load player score ID
+# side effect: al.new tag is added to new player
 data modify storage algol:zzz macro.player_id.uuid_str set from storage gu:main out
 function algol.core:zzz/prepare_player/load_id with storage algol:zzz macro.player_id
 

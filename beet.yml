@@ -14,6 +14,7 @@ data_pack:
   load:
     - Algol - Core
     - Algol - Death Drop
+    - Algol - Dialog Manager
     - Algol - Fancy Woolbox
     - Algol - Loot Utilities
 
