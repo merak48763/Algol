@@ -10,6 +10,7 @@
 
 # increase charge by 1 tick
 # -1 is a special case for "always ready to attack"
+# -2 will be increased by 1 here (back to resettable state)
 execute unless score @s al.attack_charge matches -1 \
   run scoreboard players add @s al.attack_charge 1
 

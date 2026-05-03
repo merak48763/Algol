@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "algol.cat:zzz/reset_charge"
+    "function": "algol.cat:zzz/advancement_attack"
   }
 }

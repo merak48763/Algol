@@ -11,17 +11,15 @@ This pack modifies the attack cooldown behavior.
 ### Attack cooldown
 
 Attack cooldown only starts when the player's melee attack actually hurt something.  
-This reduces the penalty of whiffing attacks and switching.
+This reduces the penalty of whiffing attacks and switching items.
 
-The attack cooldown is applied by resetting the player's **attack charge** back to 0.  
-The attack charge increases by 1 per tick.
-
+The attack cooldown is applied by resetting the player's **attack charge** back to 0 ticks.  
 Attack speed attribute controls the attack charge required to attack.  
-For example, 1 attack speed requires 20 ticks of charge.
+For example, to attack with 1 attack speed, the player's attack charge must be at least 20 ticks.
 
 ### Fist attack speed
 
-Fist/non-weapon attack speed are reduced to 1 (from 4).
+Attack speed of fist and non-weapon items is reduced to 1 (from 4).
 
 ### Invulnerability frame
 
@@ -38,7 +36,7 @@ Attack cooldown starts after triggering the impulse.
   - Riptide attack and spear charged attack will trigger cooldown. Won't fix.
 - When the cooldown is applied, the player will have 0 attack speed and 0 entity interaction range.
   - This may have negative impact on some entity interaction mechanisms. Won't fix.
-- Fist/non-weapon is determined by not having the `base_attack_speed` attribute modifier on `attack_speed` attribute.
+- Fist and non-weapon items are determined by not having the `base_attack_speed` attribute modifier on `attack_speed` attribute.
 - `#is_player_attack` is added to `#bypasses_cooldown` tag.
 
 ## Functions
