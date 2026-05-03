@@ -13,6 +13,7 @@ data_pack:
   max_format: 94
   load:
     - Algol - Core
+    - Algol - Controllable Attack Timer
     - Algol - Death Drop
     - Algol - Dialog Manager
     - Algol - Fancy Woolbox

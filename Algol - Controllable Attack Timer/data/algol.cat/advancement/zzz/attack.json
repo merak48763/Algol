@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "attack": {
+      "trigger": "player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_direct": true,
+            "tags": [
+              {"id": "is_player_attack", "expected": true}
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "algol.cat:zzz/reset_charge"
+  }
+}

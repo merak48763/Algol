@@ -33,7 +33,7 @@ Players are unable to trigger them manually in chat.
 
 - Use this trigger for submitting values on dialogs.
 
-## Function
+## Functions
 
 ### `algol.dialog:open`
 

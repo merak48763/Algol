@@ -1,7 +1,8 @@
 {
   "algol.pack.core": "Algol - Core DP",
+  "algol.pack.controllable_attack_timer": "Algol - Controllable Attack Timer DP",
   "algol.pack.death_drop": "Algol - Death Drop DP",
-  "algol.pack.dialog_manager": "Algol - Dialog Manager",
+  "algol.pack.dialog_manager": "Algol - Dialog Manager DP",
   "algol.pack.fancy_woolbox": "Algol - Fancy Woolbox DP",
   "algol.pack.loot_util": "Algol - Loot Utilities DP",
 
