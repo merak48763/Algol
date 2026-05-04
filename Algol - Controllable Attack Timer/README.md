@@ -51,3 +51,10 @@ Attack cooldown starts after triggering the impulse.
 - Make the player able to attack immediately.
 - Must be run as a player.
 - Recommended to call in `post_piercing_effect` enchantment effect to prevent spamming whiffing attacks.
+
+### `algol.cat:query_attack_speed`
+
+- Return the player's attack speed attribute.
+- Because this pack completely messes the attribute up, regular `/attribute` command is unable to query the correct attribute value.
+- Must be run as a player.
+- The parameter `$(scale)` specifies the scale of returned result.
