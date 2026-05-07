@@ -1,3 +1,2 @@
-execute unless entity @s[type=player] run return fail
 # always reset charge here
-scoreboard players set @s al.attack_charge 0
+scoreboard players set @s[type=player] al.attack_charge 0

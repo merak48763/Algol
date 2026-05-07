@@ -36,7 +36,10 @@ Attack cooldown starts after triggering the impulse.
   - Riptide attack and spear charged attack will trigger cooldown. Won't fix.
 - When the cooldown is applied, the player will have 0 attack speed and 0 entity interaction range.
   - This may have negative impact on some entity interaction mechanisms. Won't fix.
-- Fist and non-weapon items are determined by not having the `base_attack_speed` attribute modifier on `attack_speed` attribute.
+  - Apply `minimum_attack_charge` component on weapons with `attack_range` component to prevent the weapons from breaking the attack suppression.
+- When the attack is ready, the player will receive +1000000 attack speed.
+  - This is effectively constant 1024 attack speed, with a lot of margin for attack speed nerf modifiers.
+- Fist and non-weapon items are distinguished by not having the `base_attack_speed` attack speed attribute modifier.
 - `#is_player_attack` is added to `#bypasses_cooldown` tag.
 
 ## Functions
