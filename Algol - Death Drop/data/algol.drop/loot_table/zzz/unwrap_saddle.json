@@ -9,13 +9,9 @@
           "slot_source": {
             "type": "contents",
             "slot_source": {
-              "type": "contents",
-              "slot_source": {
-                "type": "slot_range",
-                "source": "this",
-                "slots": "saddle"
-              },
-              "component": "bundle_contents"
+              "type": "slot_range",
+              "source": "this",
+              "slots": "saddle"
             },
             "component": "container"
           }

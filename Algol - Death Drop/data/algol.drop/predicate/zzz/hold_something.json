@@ -5,19 +5,9 @@
     "slots": {
       "contents": {
         "predicates": {
-          "bundle_contents": {
+          "container": {
             "items": {
-              "contains": [
-                {
-                  "predicates": {
-                    "container": {
-                      "items": {
-                        "size": {"min": 1}
-                      }
-                    }
-                  }
-                }
-              ]
+              "size": {"min": 1}
             }
           }
         }

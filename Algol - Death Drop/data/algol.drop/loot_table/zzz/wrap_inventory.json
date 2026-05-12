@@ -25,79 +25,46 @@
             },
             {
               "function": "set_contents",
-              "component": "bundle_contents",
+              "component": "container",
               "entries": [
                 {
-                  "type": "item",
-                  "name": "chest",
-                  "functions": [
+                  "type": "slots",
+                  "slot_source": [
                     {
-                      "function": "set_contents",
-                      "component": "container",
-                      "entries": [
-                        {
-                          "type": "slots",
-                          "slot_source": {
-                            "type": "slot_range",
-                            "source": "this",
-                            "slots": "inventory.*"
-                          },
-                          "functions": [
-                            {
-                              "function": "reference",
-                              "name": "algol.drop:zzz/filter"
-                            }
-                          ]
-                        }
-                      ]
+                      "type": "slot_range",
+                      "source": "this",
+                      "slots": "hotbar.*"
+                    },
+                    {
+                      "type": "slot_range",
+                      "source": "this",
+                      "slots": "inventory.*"
+                    },
+                    {
+                      "type": "slot_range",
+                      "source": "this",
+                      "slots": "armor.*"
+                    },
+                    {
+                      "type": "slot_range",
+                      "source": "this",
+                      "slots": "weapon.offhand"
+                    },
+                    {
+                      "type": "slot_range",
+                      "source": "this",
+                      "slots": "player.crafting.*"
+                    },
+                    {
+                      "type": "slot_range",
+                      "source": "this",
+                      "slots": "player.cursor"
                     }
-                  ]
-                },
-                {
-                  "type": "item",
-                  "name": "chest",
+                  ],
                   "functions": [
                     {
-                      "function": "set_contents",
-                      "component": "container",
-                      "entries": [
-                        {
-                          "type": "slots",
-                          "slot_source": [
-                            {
-                              "type": "slot_range",
-                              "source": "this",
-                              "slots": "hotbar.*"
-                            },
-                            {
-                              "type": "slot_range",
-                              "source": "this",
-                              "slots": "armor.*"
-                            },
-                            {
-                              "type": "slot_range",
-                              "source": "this",
-                              "slots": "weapon.offhand"
-                            },
-                            {
-                              "type": "slot_range",
-                              "source": "this",
-                              "slots": "player.crafting.*"
-                            },
-                            {
-                              "type": "slot_range",
-                              "source": "this",
-                              "slots": "player.cursor"
-                            }
-                          ],
-                          "functions": [
-                            {
-                              "function": "reference",
-                              "name": "algol.drop:zzz/filter"
-                            }
-                          ]
-                        }
-                      ]
+                      "function": "reference",
+                      "name": "algol.drop:zzz/filter"
                     }
                   ]
                 }
