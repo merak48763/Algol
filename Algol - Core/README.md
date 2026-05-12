@@ -51,3 +51,10 @@ Data will be loaded to storage `algol:player_storage`, under the root tag `value
 
 - Called when player respawns.
 - Context: `as` and `at` the player.
+
+## Entity Type Tags
+
+### `#algol.core:object_entity`
+
+- Entity types that are not considered "alive" in common sense.
+- This tag includes armor stand, despite the fact that it's technically `LivingEntity`.
