@@ -1,6 +1,5 @@
 {
   "values": [
-    "algol.drop:zzz/on_death",
     "algol.drop:zzz/invalidate_dimension_data"
   ]
 }

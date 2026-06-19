@@ -16,6 +16,7 @@ struct MacroParamMap {
   },
   /// - `algol.drop:zzz/on_death/init_grave`
   position?: struct {
+    dim?: #[id="dimension"] string,
     x?: double,
     y?: double,
     z?: double,

@@ -12,10 +12,7 @@ scoreboard objectives add al.player_id dummy
     run scoreboard players set #next al.player_id 1
 
 # util chunk
-forceload add -30000000 1832231
-# util entities
-  # item display (3067b7fd-0-0-0-1)
-  summon item_display -30000000 0 1832231 {UUID: [I; 812103677,0,0,1], CustomName: "[Algol] 3067b7fd-0-0-0-1", view_range: 0}
+execute in overworld run function algol.core:zzz/load/util_chunk
 
 # start schedule loop
 function algol.core:zzz/refresh_text/loop

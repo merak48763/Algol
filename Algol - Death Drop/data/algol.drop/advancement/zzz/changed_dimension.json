@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "changed_dimension": {
+      "trigger": "changed_dimension"
+    }
+  },
+  "rewards": {
+    "function": "algol.drop:zzz/invalidate_dimension_data"
+  }
+}

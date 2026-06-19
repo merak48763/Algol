@@ -1,1 +1,2 @@
 dispatch algol:player_storage["al/death_drop_pos"] to [double] @ 3
+dispatch algol:player_storage["al/death_drop_dim"] to #[id="dimension"] string
