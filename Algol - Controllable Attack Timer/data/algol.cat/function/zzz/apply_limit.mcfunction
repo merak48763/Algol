@@ -3,9 +3,9 @@ attribute @s attack_speed modifier remove al.cat:modifier
 
 # compute charge requirement for current attack speed
   # get attack speed
-  # (+15% buffer; 1000x scaled)
+  # (+8% buffer; 1000x scaled)
   execute store result score #attack_speed al.zzz \
-    run attribute @s attack_speed get 1150
+    run attribute @s attack_speed get 1080
   # charge requirement = (20 ticks * 1000) / (attack speed * 1000)
   scoreboard players set #requirement al.zzz 20000
   scoreboard players operation #requirement al.zzz /= #attack_speed al.zzz
