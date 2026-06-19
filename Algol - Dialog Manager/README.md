@@ -47,6 +47,6 @@ Players are unable to trigger them manually in chat.
 
 ## Entity Tags
 
-### `al.dialog_open`
+### `al.dialog.open`
 
 - Read-only tag on players with a dialog open.

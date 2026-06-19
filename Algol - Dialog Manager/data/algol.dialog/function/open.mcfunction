@@ -14,7 +14,7 @@ function algol.core:load_player_storage
 $data modify storage algol:player_storage value."al/active_dialog" set value "$(id)"
 
 # add tag
-tag @s add al.dialog_open
+tag @s add al.dialog.open
 
 # initialize input trigger
   # enable trigger

@@ -10,7 +10,7 @@ function algol.core:load_player_storage
 data remove storage algol:player_storage value."al/active_dialog"
 
 # remove tag
-tag @s remove al.dialog_open
+tag @s remove al.dialog.open
 
 # reset input trigger
 scoreboard players reset @s al.dialog.button

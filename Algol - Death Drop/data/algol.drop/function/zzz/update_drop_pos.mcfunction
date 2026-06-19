@@ -1,8 +1,8 @@
 function algol.core:load_player_storage
 execute summon marker run function algol.drop:zzz/update_drop_pos/write_pos
 
-execute if entity @s[tag=!al.renew_dim] run return 1
-tag @s remove al.renew_dim
+execute if entity @s[tag=!al.zzz.renew_dim] run return 1
+tag @s remove al.zzz.renew_dim
 # save dimension ID
   # shortcut for overworld
   execute if dimension overworld \
