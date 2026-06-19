@@ -44,3 +44,9 @@ Players are unable to trigger them manually in chat.
 
 - Close any opened dialog.
 - Must be run as the player to close the dialog.
+
+## Entity Tags
+
+### `al.dialog_open`
+
+- Read-only tag on players with a dialog open.
