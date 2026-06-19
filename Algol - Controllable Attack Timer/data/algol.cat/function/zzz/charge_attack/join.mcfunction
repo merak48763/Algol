@@ -1,2 +1,2 @@
 # new player -> charge attack
-scoreboard players set @s[tag=al.new] al.attack_charge -1
+tag @s[tag=al.new] add al.cat.charged

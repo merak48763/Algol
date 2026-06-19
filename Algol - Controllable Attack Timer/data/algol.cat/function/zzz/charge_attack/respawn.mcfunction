@@ -1,1 +1,1 @@
-scoreboard players set @s al.attack_charge -1
+tag @s add al.cat.charged

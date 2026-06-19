@@ -61,3 +61,29 @@ Attack cooldown starts after triggering the impulse.
 - Because this pack completely messes the attribute up, regular `/attribute` command is unable to query the correct attribute value.
 - Must be run as a player.
 - The parameter `$(scale)` specifies the scale of returned result.
+
+## Scores
+
+### `al.attack_charge`
+
+- Has effect on players.
+- This is the player's attack charge timer in ticks.
+
+## Entity Tags
+
+### `al.cat.charged`
+
+- Has effect on players.
+- Tagged player can attack regardless of their current charge.
+
+### `al.cat.reset`
+
+- Has effect on players.
+- Tagged player's charge will reset to 0.
+- This tag is added when player performs an attack, resetting the player's attack charge to 0 in the next tick.
+- To apply custom reset mechanism, use `al.cat.no_reset` to cancel this tag.
+  - **Note**: removing `al.cat.reset` can cause unexpected results due to advancement triggering order!
+
+### `al.cat.no_reset`
+
+- Cancels `al.cat.reset` once.

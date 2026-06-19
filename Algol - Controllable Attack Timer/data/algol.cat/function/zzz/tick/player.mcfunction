@@ -8,11 +8,14 @@
   execute if score #has_weapon al.zzz matches 0 \
     run attribute @s attack_speed modifier add al.cat:no_weapon -3 add_value
 
+# handle tags
+execute if entity @s[tag=al.cat.reset, tag=!al.cat.no_reset] \
+  run function algol.cat:zzz/clear_charge
+tag @s remove al.cat.reset
+tag @s remove al.cat.no_reset
+
 # increase charge by 1 tick
-# -1 is a special case for "always ready to attack"
-# -2 will be increased by 1 here (back to resettable state)
-execute unless score @s al.attack_charge matches -1 \
-  run scoreboard players add @s al.attack_charge 1
+scoreboard players add @s al.attack_charge 1
 
 # apply attack limit
 function algol.cat:zzz/apply_limit

@@ -16,8 +16,8 @@ attribute @s attack_speed modifier remove al.cat:modifier
   # 0 attack speed
   execute if score #attack_speed al.zzz matches 0 \
     run scoreboard players set #can_attack al.zzz 0
-  # special value for "is charged"
-  execute if score @s al.attack_charge matches -1 \
+  # special case for "is charged"
+  execute if entity @s[tag=al.cat.charged] \
     run scoreboard players set #can_attack al.zzz 1
 
 # re-apply attack speed multipler
