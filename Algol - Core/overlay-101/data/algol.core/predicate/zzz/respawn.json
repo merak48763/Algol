@@ -2,7 +2,8 @@
   "condition": "entity_properties",
   "entity": "this",
   "predicate": {
-    "type_specific/player": {
+    "type_specific": {
+      "type": "player",
       "stats": [
         {"type": "custom", "stat": "time_since_death", "value": 1},
         {"type": "custom", "stat": "deaths", "value": {"min": 1}}

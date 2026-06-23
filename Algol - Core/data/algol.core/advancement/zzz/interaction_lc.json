@@ -8,9 +8,9 @@
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "interaction",
+              "entity_type": "interaction",
               "predicates": {
-                "custom_data": "{'al/on_attack': {}}"
+                "custom_data": {"al/on_attack": {}}
               }
             }
           }

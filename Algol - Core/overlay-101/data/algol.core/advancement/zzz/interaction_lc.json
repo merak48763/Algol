@@ -1,16 +1,16 @@
 {
   "criteria": {
     "click": {
-      "trigger": "player_interacted_with_entity",
+      "trigger": "player_hurt_entity",
       "conditions": {
         "entity": [
           {
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-              "entity_type": "interaction",
+              "type": "interaction",
               "predicates": {
-                "custom_data": {"al/on_interact": {}}
+                "custom_data": {"al/on_attack": {}}
               }
             }
           }
@@ -19,6 +19,6 @@
     }
   },
   "rewards": {
-    "function": "algol.core:zzz/interaction/advancement_rc"
+    "function": "algol.core:zzz/interaction/advancement_lc"
   }
 }

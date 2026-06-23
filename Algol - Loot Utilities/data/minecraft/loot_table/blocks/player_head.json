@@ -22,7 +22,7 @@
               "function": "filtered",
               "item_filter": {
                 "predicates": {
-                  "custom_data": "{'al/special_head': {}}"
+                  "custom_data": {"al/special_head": {}}
                 }
               },
               "on_pass": {

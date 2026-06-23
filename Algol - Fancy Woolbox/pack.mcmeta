@@ -1,6 +1,6 @@
 {
   "pack": {
-    "min_format": 94, "max_format": 101,
+    "min_format": 94, "max_format": 107,
     "description": {"translate": "algol.pack.fancy_woolbox", "fallback": "Algol - Fancy Woolbox DP"}
   }
 }
