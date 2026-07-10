@@ -1,5 +1,4 @@
 # as grave interaction
-# context dimension: overworld
 
 tag @s remove al.new
 

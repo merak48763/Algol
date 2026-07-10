@@ -1,4 +1,4 @@
-# context dimension: overworld
+# at 3067b7fd-0-0-0-1
 
 # copy inventory to two chests inside a bundle
 loot replace entity 3067b7fd-0-0-0-1 contents loot algol.drop:zzz/wrap_inventory
@@ -31,7 +31,7 @@ execute as 3067b7fd-0-0-0-1 unless predicate algol.drop:zzz/hold_something run r
 
   # create entity stack
   tag @s add al.this
-  summon interaction -30000000 0 1832231 { \
+  summon interaction ~ ~ ~ { \
     Tags: ["al.new"], \
     data: { \
       "al/on_interact": {run: "function algol.drop:zzz/on_grave_interact"}, \
@@ -45,5 +45,5 @@ execute as 3067b7fd-0-0-0-1 unless predicate algol.drop:zzz/hold_something run r
     ] \
   }
   tag @s remove al.this
-  execute positioned -30000000 0 1832231 as @e[tag=al.new, type=interaction, distance=..0.01, limit=1] \
+  execute positioned ~ ~ ~ as @e[tag=al.new, type=interaction, distance=..0.01, limit=1] \
     run function algol.drop:zzz/on_death/init_grave with storage algol:zzz macro.position

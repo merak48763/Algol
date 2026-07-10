@@ -12,7 +12,8 @@ scoreboard objectives add al.player_id dummy
     run scoreboard players set #next al.player_id 1
 
 # util chunk
-execute in overworld run function algol.core:zzz/load/util_chunk
+execute positioned -30000000 0 1832231 \
+  run function algol.core:zzz/load/util_chunk
 
 # start schedule loop
 function algol.core:zzz/refresh_text/loop
