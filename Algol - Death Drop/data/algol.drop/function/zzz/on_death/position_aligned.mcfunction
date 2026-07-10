@@ -45,5 +45,5 @@ execute as 3067b7fd-0-0-0-1 unless predicate algol.drop:zzz/hold_something run r
     ] \
   }
   tag @s remove al.this
-  execute positioned ~ ~ ~ as @e[tag=al.new, type=interaction, distance=..0.01, limit=1] \
+  execute as @e[tag=al.new, type=interaction, distance=..0.01, limit=1] \
     run function algol.drop:zzz/on_death/init_grave with storage algol:zzz macro.position
