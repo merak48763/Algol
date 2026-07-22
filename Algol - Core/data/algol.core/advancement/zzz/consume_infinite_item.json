@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "custom_data": "{'al/infinite': 1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "algol.core:zzz/infinite_consumable/advancement_consume"
+  }
+}

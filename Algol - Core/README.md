@@ -18,6 +18,14 @@ Dependency: none
 - Fields:
   - `run`: the command to run on attacked/interacted.
 
+### `al/infinite`
+
+- Has effect on consumable items.
+- Value: `1b`
+- The item will not be removed after consumed.
+  - The item must not have `use_remainder` component.
+  - `consume_time` must be at least 0.05 seconds.
+
 ## Player Score ID
 
 Players have their unique ID stored in objective `al.player_id`.  
