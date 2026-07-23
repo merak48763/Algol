@@ -8,7 +8,7 @@
           "type": "slots",
           "slot_source": {
             "type": "contents",
-            "component": "container",
+            "component": "charged_projectiles",
             "slot_source": {
               "type": "slot_range",
               "source": "this",

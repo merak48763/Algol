@@ -11,6 +11,7 @@
             {
               "function": "set_components",
               "components": {
+                "custom_data": "{smithed: {ignore: {everything: 1b}}}",
                 "equippable": {
                   "slot": "saddle",
                   "equip_sound": "intentionally_empty"
@@ -23,7 +24,7 @@
             },
             {
               "function": "set_contents",
-              "component": "container",
+              "component": "charged_projectiles",
               "entries": [
                 {
                   "type": "slots",

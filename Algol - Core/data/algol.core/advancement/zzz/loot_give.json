@@ -5,7 +5,7 @@
     }
   },
   "rewards": {
-    "loot": ["algol.fwb:zzz/unwrap_saddle"],
-    "function": "algol.fwb:zzz/give_item/cleanup"
+    "loot": ["algol.core:zzz/loot_give"],
+    "function": "algol.core:zzz/loot_give/cleanup"
   }
 }

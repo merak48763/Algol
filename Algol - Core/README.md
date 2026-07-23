@@ -42,6 +42,20 @@ Data will be loaded to storage `algol:player_storage`, under the root tag `value
 - `uuid`: The int-array UUID of the player.
 - `uuid_str`: The string UUID of the player.
 
+## Functions
+
+### `algol.core:load_player_storage`
+
+- Loads per-player storage. See above.
+- Must be run as the player to load storage.
+
+### `loot_give`
+
+- Gives the player items from loot table `$(loot)`.
+  - `$(loot)` must be a valid loot table ID. Inlined form is not allowed.
+- When the player's inventory is full, the items are dropped instead of discarded.
+- Must be run as the player to receive the items.
+
 ## Event Function Tags
 
 ### `#algol.core:event/join`

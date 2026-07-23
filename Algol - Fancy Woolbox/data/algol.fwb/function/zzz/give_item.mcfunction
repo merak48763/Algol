@@ -7,4 +7,4 @@ execute positioned ~ ~.25 ~ as @e[tag=al.woolbox, type=item_display, distance=..
 tag @s remove al.this
 
 # use advancement trick to guarantee drop
-advancement grant @s only algol.fwb:zzz/drop_from_saddle
+advancement grant @s only algol.core:zzz/loot_give
