@@ -1,34 +1,34 @@
 [
   {
-    "type": "copy_components",
+    "function": "copy_components",
     "source": "block_entity",
     "exclude": [
       "custom_data"
     ]
   },
   {
-    "type": "filtered",
+    "function": "filtered",
     "item_filter": {
       "predicates": {
         "custom_data": "{'al/special_head': {equippable: 0b}}"
       }
     },
     "on_pass": {
-      "type": "set_components",
+      "function": "set_components",
       "components": {
         "!equippable": {}
       }
     }
   },
   {
-    "type": "filtered",
+    "function": "filtered",
     "item_filter": {
       "predicates": {
         "custom_data": "{'al/special_head': {enchantable: 0b}}"
       }
     },
     "on_pass": {
-      "type": "set_components",
+      "function": "set_components",
       "components": {
         "!enchantments": {}
       }

@@ -1,6 +1,6 @@
 [
   {
-    "type": "copy_components",
+    "function": "copy_components",
     "source": "block_entity",
     "include": [
       "custom_data",
@@ -8,14 +8,14 @@
     ]
   },
   {
-    "type": "filtered",
+    "function": "filtered",
     "item_filter": {
       "predicates": {
         "custom_data": "{'al/discard_name': 1b}"
       }
     },
     "on_pass": {
-      "type": "set_components",
+      "function": "set_components",
       "components": {
         "!custom_data": {},
         "!custom_name": {}
