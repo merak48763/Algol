@@ -7,9 +7,9 @@
         {
           "type": "item",
           "name": "barrier",
-          "modifier": [
+          "functions": [
             {
-              "type": "set_components",
+              "function": "set_components",
               "components": {
                 "item_model": "bundle",
                 "equippable": {
@@ -24,7 +24,7 @@
               }
             },
             {
-              "type": "set_contents",
+              "function": "set_contents",
               "component": "container",
               "entries": [
                 {
@@ -61,7 +61,12 @@
                       "slots": "player.cursor"
                     }
                   ],
-                  "modifier": "algol.drop:zzz/filter"
+                  "functions": [
+                    {
+                      "function": "reference",
+                      "name": "algol.drop:zzz/filter"
+                    }
+                  ]
                 }
               ]
             }

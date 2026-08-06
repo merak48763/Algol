@@ -1,8 +1,8 @@
 {
-  "type": "modify_contents",
+  "function": "modify_contents",
   "component": "container",
   "modifier": {
-    "type": "filtered",
+    "function": "filtered",
     "item_filter": {
       "predicates": {
         "enchantments": [
@@ -11,7 +11,7 @@
       }
     },
     "on_pass": {
-      "type": "discard"
+      "function": "discard"
     }
   }
 }

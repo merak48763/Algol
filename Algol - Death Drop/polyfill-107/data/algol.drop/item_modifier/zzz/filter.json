@@ -1,22 +1,22 @@
 {
-  "type": "filtered",
+  "function": "filtered",
   "item_filter": {
     "predicates": {
       "custom_data": "{'al/soulbound': 1b}"
     }
   },
   "on_pass": {
-    "type": "discard"
+    "function": "discard"
   },
   "on_fail": {
-    "type": "filtered",
+    "function": "filtered",
     "item_filter": {
       "predicates": {
         "custom_data": "{smithed: {ignore: {everything: 1b}}}"
       }
     },
     "on_pass": {
-      "type": "discard"
+      "function": "discard"
     }
   }
 }
