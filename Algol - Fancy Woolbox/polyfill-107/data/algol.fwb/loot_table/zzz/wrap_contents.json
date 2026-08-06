@@ -7,9 +7,9 @@
         {
           "type": "item",
           "name": "barrier",
-          "modifier": [
+          "functions": [
             {
-              "type": "set_components",
+              "function": "set_components",
               "components": {
                 "custom_data": "{smithed: {ignore: {everything: 1b}}}",
                 "equippable": {
@@ -23,7 +23,7 @@
               }
             },
             {
-              "type": "set_contents",
+              "function": "set_contents",
               "component": "charged_projectiles",
               "entries": [
                 {
