@@ -51,66 +51,63 @@
             }
           ]
         },
-        "requirements": {
-          "type": "all_of",
-          "terms": [
-            {
-              "type": "inverted",
-              "term": {
-                "type": "entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "vehicle": {}
-                }
-              }
-            },
-            {
-              "type": "entity_properties",
+        "requirements": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "entity_properties",
               "entity": "this",
               "predicate": {
-                "flags": {
-                  "is_fall_flying": false,
-                  "is_in_water": false
+                "vehicle": {}
+              }
+            }
+          },
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "flags": {
+                "is_fall_flying": false,
+                "is_in_water": false
+              }
+            }
+          },
+          {
+            "condition": "any_of",
+            "terms": [
+              {
+                "condition": "inverted",
+                "term": {
+                  "condition": "entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "entity_type": "player"
+                  }
+                }
+              },
+              {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type_specific/player": {
+                    "gamemode": ["creative"]
+                  }
+                }
+              },
+              {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type_specific/player": {
+                    "food": {
+                      "level": {"min": 7}
+                    }
+                  }
                 }
               }
-            },
-            {
-              "type": "any_of",
-              "terms": [
-                {
-                  "type": "inverted",
-                  "term": {
-                    "type": "entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                      "entity_type": "player"
-                    }
-                  }
-                },
-                {
-                  "type": "entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type_specific/player": {
-                      "gamemode": ["creative"]
-                    }
-                  }
-                },
-                {
-                  "type": "entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "type_specific/player": {
-                      "food": {
-                        "level": {"min": 7}
-                      }
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -7,6 +7,11 @@
   "overlays": {
     "entries": [
       {
+        "directory": "polyfill-107",
+        "min_format": 94,
+        "max_format": 107
+      },
+      {
         "directory": "polyfill-101",
         "min_format": 94,
         "max_format": 101
