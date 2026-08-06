@@ -1,6 +1,7 @@
 {
   "pack": {
-    "min_format": 94, "max_format": 107,
-    "description": {"translate": "algol.pack.death_drop", "fallback": "Algol - Death Drop DP"}
+    "description": {"translate": "algol.pack.death_drop", "fallback": "Algol - Death Drop DP"},
+    "min_format": 94,
+    "max_format": 107
   }
 }

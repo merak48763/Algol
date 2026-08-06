@@ -13,9 +13,9 @@ data_pack:
   max_format: 94
   load:
     - Algol - Core
-    - Algol - Core/overlay-101
+    - Algol - Core/polyfill-101
     - Algol - Controllable Attack Timer
-    - Algol - Controllable Attack Timer/overlay-101
+    - Algol - Controllable Attack Timer/polyfill-101
     - Algol - Death Drop
     - Algol - Dialog Manager
     - Algol - Fancy Woolbox
