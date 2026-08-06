@@ -13,13 +13,18 @@ data_pack:
   max_format: 94
   load:
     - Algol - Core
+    - Algol - Core/polyfill-107
     - Algol - Core/polyfill-101
     - Algol - Controllable Attack Timer
+    - Algol - Controllable Attack Timer/polyfill-107
     - Algol - Controllable Attack Timer/polyfill-101
     - Algol - Death Drop
+    - Algol - Death Drop/polyfill-107
     - Algol - Dialog Manager
     - Algol - Fancy Woolbox
+    - Algol - Fancy Woolbox/polyfill-107
     - Algol - Loot Utilities
+    - Algol - Loot Utilities/polyfill-107
 
 resource_pack:
   name: algol-rp
