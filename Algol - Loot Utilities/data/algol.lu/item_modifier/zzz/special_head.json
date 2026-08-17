@@ -1,37 +1,40 @@
-[
-  {
-    "type": "copy_components",
-    "source": "block_entity",
-    "exclude": [
-      "custom_data"
-    ]
-  },
-  {
-    "type": "filtered",
-    "item_filter": {
-      "predicates": {
-        "custom_data": "{'al/special_head': {equippable: 0b}}"
+{
+  "type": "sequence",
+  "functions": [
+    {
+      "type": "copy_components",
+      "source": "block_entity",
+      "exclude": [
+        "custom_data"
+      ]
+    },
+    {
+      "type": "filtered",
+      "item_filter": {
+        "predicates": {
+          "custom_data": "{'al/special_head': {equippable: 0b}}"
+        }
+      },
+      "on_pass": {
+        "type": "set_components",
+        "components": {
+          "!equippable": {}
+        }
       }
     },
-    "on_pass": {
-      "type": "set_components",
-      "components": {
-        "!equippable": {}
+    {
+      "type": "filtered",
+      "item_filter": {
+        "predicates": {
+          "custom_data": "{'al/special_head': {enchantable: 0b}}"
+        }
+      },
+      "on_pass": {
+        "type": "set_components",
+        "components": {
+          "!enchantments": {}
+        }
       }
     }
-  },
-  {
-    "type": "filtered",
-    "item_filter": {
-      "predicates": {
-        "custom_data": "{'al/special_head': {enchantable: 0b}}"
-      }
-    },
-    "on_pass": {
-      "type": "set_components",
-      "components": {
-        "!enchantments": {}
-      }
-    }
-  }
-]
+  ]
+}

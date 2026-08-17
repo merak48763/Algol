@@ -2,7 +2,7 @@
   "pack": {
     "description": {"translate": "algol.pack.loot_util", "fallback": "Algol - Loot Utilities DP"},
     "min_format": 94,
-    "max_format": 115
+    "max_format": 117
   },
   "overlays": {
     "entries": [
