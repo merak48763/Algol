@@ -49,7 +49,7 @@ Data will be loaded to storage `algol:player_storage`, under the root tag `value
 - Loads per-player storage. See above.
 - Must be run as the player to load storage.
 
-### `loot_give`
+### `algol.core:loot_give`
 
 - Gives the player items from loot table `$(loot)`.
   - `$(loot)` must be a valid loot table ID. Inlined form is not allowed.
