@@ -7,9 +7,9 @@
         {
           "type": "item",
           "name": "player_head",
-          "functions": [
+          "modifier": [
             {
-              "function": "copy_components",
+              "type": "copy_components",
               "source": "block_entity",
               "include": [
                 "profile",
@@ -19,16 +19,13 @@
               ]
             },
             {
-              "function": "filtered",
+              "type": "filtered",
               "item_filter": {
                 "predicates": {
                   "custom_data": {"al/special_head": {}}
                 }
               },
-              "on_pass": {
-                "function": "reference",
-                "name": "algol.lu:zzz/special_head"
-              }
+              "on_pass": "algol.lu:zzz/special_head"
             }
           ]
         }

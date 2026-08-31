@@ -7,7 +7,7 @@
           "type": {
             "is_direct": true,
             "tags": [
-              {"id": "is_player_attack", "expected": true}
+              {"id": "#is_player_attack", "expected": true}
             ]
           }
         }

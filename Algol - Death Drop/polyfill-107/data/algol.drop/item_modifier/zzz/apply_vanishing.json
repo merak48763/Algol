@@ -1,0 +1,17 @@
+{
+  "function": "modify_contents",
+  "component": "container",
+  "modifier": {
+    "function": "filtered",
+    "item_filter": {
+      "predicates": {
+        "enchantments": [
+          {"enchantments": "#algol.drop:vanishing"}
+        ]
+      }
+    },
+    "on_pass": {
+      "function": "discard"
+    }
+  }
+}

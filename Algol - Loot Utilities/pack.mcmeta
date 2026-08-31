@@ -2,6 +2,15 @@
   "pack": {
     "description": {"translate": "algol.pack.loot_util", "fallback": "Algol - Loot Utilities DP"},
     "min_format": 94,
-    "max_format": 107
+    "max_format": 117
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "polyfill-107",
+        "min_format": 94,
+        "max_format": 107
+      }
+    ]
   }
 }
