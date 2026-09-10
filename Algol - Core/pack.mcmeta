@@ -2,7 +2,7 @@
   "pack": {
     "description": {"translate": "algol.pack.core", "fallback": "Algol - Core DP"},
     "min_format": 94,
-    "max_format": 115
+    "max_format": 121
   },
   "overlays": {
     "entries": [
