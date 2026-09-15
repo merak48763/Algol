@@ -1,0 +1,26 @@
+{
+  "type": "block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "waxed_copper_chest",
+          "functions": [
+            {
+              "function": "reference",
+              "name": "algol.lu:zzz/conditional_copy_name"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "survives_explosion"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "blocks/waxed_copper_chest"
+}

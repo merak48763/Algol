@@ -3,18 +3,16 @@
     "click": {
       "trigger": "player_interacted_with_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-              "entity_type": "interaction",
-              "predicates": {
-                "custom_data": {"al/on_interact": {}}
-              }
+        "entity": {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_type": "interaction",
+            "predicates": {
+              "custom_data": {"al/on_interact": {}}
             }
           }
-        ]
+        }
       }
     }
   },

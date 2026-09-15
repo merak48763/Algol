@@ -1,0 +1,17 @@
+{
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "contents": {
+        "predicates": {
+          "container": {
+            "items": {
+              "size": {"min": 1}
+            }
+          }
+        }
+      }
+    }
+  }
+}

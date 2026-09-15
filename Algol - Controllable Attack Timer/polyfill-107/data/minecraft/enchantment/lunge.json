@@ -1,0 +1,114 @@
+{
+  "description": {"translate": "enchantment.minecraft.lunge"},
+  "supported_items": "#enchantable/lunge",
+  "weight": 5,
+  "max_level": 3,
+  "min_cost": {"base": 5, "per_level_above_first": 8},
+  "max_cost": {"base": 25, "per_level_above_first": 8},
+  "anvil_cost": 2,
+  "slots": ["hand"],
+  "effects": {
+    "post_piercing_attack": [
+      {
+        "effect": {
+          "type": "all_of",
+          "effects": [
+            {
+              "type": "change_item_damage",
+              "amount": 1
+            },
+            {
+              "type": "apply_exhaustion",
+              "amount": {
+                "type": "linear",
+                "base": 4,
+                "per_level_above_first": 4
+              }
+            },
+            {
+              "type": "apply_impulse",
+              "direction": [0, 0, 1],
+              "coordinate_scale": [1, 0, 1],
+              "magnitude": {
+                "type": "linear",
+                "base": 0.458,
+                "per_level_above_first": 0.458
+              }
+            },
+            {
+              "type": "play_sound",
+              "sound": [
+                "item.spear.lunge_1",
+                "item.spear.lunge_2",
+                "item.spear.lunge_3"
+              ],
+              "volume": 1,
+              "pitch": 1
+            },
+            {
+              "type": "run_function",
+              "function": "algol.cat:reset_charge"
+            }
+          ]
+        },
+        "requirements": [
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "entity_properties",
+              "entity": "this",
+              "predicate": {
+                "vehicle": {}
+              }
+            }
+          },
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "flags": {
+                "is_fall_flying": false,
+                "is_in_water": false
+              }
+            }
+          },
+          {
+            "condition": "any_of",
+            "terms": [
+              {
+                "condition": "inverted",
+                "term": {
+                  "condition": "entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "entity_type": "player"
+                  }
+                }
+              },
+              {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type_specific/player": {
+                    "gamemode": ["creative"]
+                  }
+                }
+              },
+              {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type_specific/player": {
+                    "food": {
+                      "level": {"min": 7}
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

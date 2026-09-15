@@ -7,19 +7,12 @@
         {
           "type": "item",
           "name": "copper_chest",
-          "functions": [
-            {
-              "function": "reference",
-              "name": "algol.lu:zzz/conditional_copy_name"
-            }
-          ]
+          "modifier": "algol.lu:zzz/conditional_copy_name"
         }
       ],
-      "conditions": [
-        {
-          "condition": "survives_explosion"
-        }
-      ]
+      "condition": {
+        "type": "survives_explosion"
+      }
     }
   ],
   "random_sequence": "blocks/copper_chest"

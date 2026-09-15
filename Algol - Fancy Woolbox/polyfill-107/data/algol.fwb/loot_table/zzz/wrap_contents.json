@@ -1,0 +1,44 @@
+{
+  "type": "command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "barrier",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_data": "{smithed: {ignore: {everything: 1b}}}",
+                "equippable": {
+                  "slot": "saddle",
+                  "equip_sound": "intentionally_empty"
+                },
+                "enchantments": {
+                  "binding_curse": 1,
+                  "vanishing_curse": 1
+                }
+              }
+            },
+            {
+              "function": "set_contents",
+              "component": "charged_projectiles",
+              "entries": [
+                {
+                  "type": "slots",
+                  "slot_source": {
+                    "type": "slot_range",
+                    "source": "this",
+                    "slots": "contents"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

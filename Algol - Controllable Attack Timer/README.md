@@ -46,14 +46,14 @@ Attack cooldown starts after triggering the impulse.
 
 ### `algol.cat:reset_charge`
 
-- Reset the player's attack charge to 0.
+- Reset the player's attack charge to 0 by adding `al.cat.reset` tag to the player.
 - Must be run as a player.
+- Recommended to call in `post_piercing_effect` enchantment effect to prevent spamming its effect with whiffing attacks.
 
 ### `algol.cat:charge_attack`
 
 - Make the player able to attack immediately.
 - Must be run as a player.
-- Recommended to call in `post_piercing_effect` enchantment effect to prevent spamming whiffing attacks.
 
 ### `algol.cat:query_attack_speed`
 

@@ -1,0 +1,37 @@
+[
+  {
+    "function": "copy_components",
+    "source": "block_entity",
+    "exclude": [
+      "custom_data"
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "predicates": {
+        "custom_data": "{'al/special_head': {equippable: 0b}}"
+      }
+    },
+    "on_pass": {
+      "function": "set_components",
+      "components": {
+        "!equippable": {}
+      }
+    }
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "predicates": {
+        "custom_data": "{'al/special_head': {enchantable: 0b}}"
+      }
+    },
+    "on_pass": {
+      "function": "set_components",
+      "components": {
+        "!enchantments": {}
+      }
+    }
+  }
+]

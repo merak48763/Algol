@@ -1,0 +1,39 @@
+{
+  "type": "block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "player_head",
+          "functions": [
+            {
+              "function": "copy_components",
+              "source": "block_entity",
+              "include": [
+                "profile",
+                "note_block_sound",
+                "custom_name",
+                "custom_data"
+              ]
+            },
+            {
+              "function": "filtered",
+              "item_filter": {
+                "predicates": {
+                  "custom_data": {"al/special_head": {}}
+                }
+              },
+              "on_pass": {
+                "function": "reference",
+                "name": "algol.lu:zzz/special_head"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "blocks/player_head"
+}

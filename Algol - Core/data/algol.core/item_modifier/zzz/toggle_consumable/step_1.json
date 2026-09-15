@@ -1,4 +1,4 @@
 {
-  "function": "set_custom_data",
+  "type": "set_custom_data",
   "tag": "{'al/infinite': 0b}"
 }
