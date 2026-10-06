@@ -33,6 +33,7 @@
     "furnace_minecart",
     "glow_item_frame",
     "hopper_minecart",
+    {"id": "ice_ball", "required": false},
     "interaction",
     "item",
     "item_display",
