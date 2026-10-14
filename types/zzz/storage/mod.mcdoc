@@ -11,7 +11,8 @@ dispatch minecraft:storage[algol:zzz] to struct AlgolInternalStorage {
   ser?: SerializedData,
   /// Temporary storage for data compare trick
   cmp?: any,
-  /// Player string UUID → score ID
+  /// Player string UUID → score ID \
+  /// Only online mode players are stored
   player_id?: struct PlayerIdMap {
     [#[uuid] string]: int @ 1..,
   },

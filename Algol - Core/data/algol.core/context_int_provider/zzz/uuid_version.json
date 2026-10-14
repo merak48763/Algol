@@ -1,0 +1,13 @@
+{
+  "type": "div",
+  "left": {
+    "type": "floor_mod",
+    "left": {
+      "type": "storage",
+      "storage": "algol:zzz",
+      "path": "ser.uuid[1]"
+    },
+    "right": 65536
+  },
+  "right": 4096
+}
