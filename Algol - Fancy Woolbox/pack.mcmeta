@@ -2,10 +2,15 @@
   "pack": {
     "description": {"translate": "algol.pack.fancy_woolbox", "fallback": "Algol - Fancy Woolbox DP"},
     "min_format": 94,
-    "max_format": 121
+    "max_format": 124
   },
   "overlays": {
     "entries": [
+      {
+        "directory": "polyfill-121",
+        "min_format": 94,
+        "max_format": 121
+      },
       {
         "directory": "polyfill-107",
         "min_format": 94,

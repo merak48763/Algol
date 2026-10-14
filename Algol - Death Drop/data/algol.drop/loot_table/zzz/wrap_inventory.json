@@ -14,7 +14,7 @@
                 "item_model": "bundle",
                 "equippable": {
                   "slot": "saddle",
-                  "equip_sound": "intentionally_empty"
+                  "equip_sound": {"sound_id": "bruh_mojank", "range": 0}
                 },
                 "enchantments": {
                   "binding_curse": 1,
