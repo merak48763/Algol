@@ -13,8 +13,7 @@
               "components": {
                 "custom_data": "{smithed: {ignore: {everything: 1b}}}",
                 "equippable": {
-                  "slot": "saddle",
-                  "equip_sound": {"sound_id": "bruh_mojank", "range": 0}
+                  "slot": "saddle"
                 },
                 "enchantments": {
                   "binding_curse": 1,
